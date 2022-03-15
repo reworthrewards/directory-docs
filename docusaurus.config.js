@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'REWORTH DIRECTORY',
   tagline: 'REWORTH REWARDS',
-  url: 'https://ShocKWavEv1.github.io',
-  baseUrl: '/reworth-docs/',
+  url: '',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'ShocKWavEv1', // Usually your GitHub org/user name.
-  projectName: 'reworth-docs', // Usually your repo name.
+  organizationName: 'reworthrewards', // Usually your GitHub org/user name.
+  projectName: 'directory-docs', // Usually your repo name.
 
   presets: [
     [
