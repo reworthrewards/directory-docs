@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'REWORTH DIRECTORY',
   tagline: 'REWORTH REWARDS',
-  url: '',
+  url: 'https://ShocKWavEv1.github.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
