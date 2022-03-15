@@ -4,7 +4,7 @@
  */
 
  .baseHero {
-  padding: 5rem 12rem;
+  padding: 4rem 12rem 4rem 12rem;
   text-align: center;
 }
 
@@ -40,6 +40,10 @@
   .card {
     grid-column: span 2;
   }
+
+  .cardPlayground {
+    grid-column: span 2;
+  }
 }
 
 @media (max-width: 767px) {
@@ -66,6 +70,10 @@
   .card {
     grid-column: span 2;
   }
+
+  .cardPlayground {
+    grid-column: span 2;
+  }
 }
 
 .buttons {
@@ -83,7 +91,7 @@
 
 .featuresTitle{
   font-weight: 700;
-  font-size: 1.85rem;
+  font-size: 2rem;
   margin: 0px;
 }
 
@@ -126,6 +134,11 @@
   border-radius: 8px;
 }
 
+.cardPlayground {
+  padding: 2rem;
+  border-radius: 8px;
+}
+
 .emojiIcon {
   font-size: 3rem;
 }
@@ -143,7 +156,7 @@
 
 .phoneDark {
   flex-shrink: 0 !important;
-  box-shadow: 0 0 20px 10px rgba(255,255,255,.2) !important;
+  box-shadow: 0 0 20px 10px rgba(255, 180, 180, 0.12) !important;
   width: 385px !important;
   height: 680px !important;
   padding: 5px !important;
@@ -173,4 +186,27 @@
   overflow: hidden;
   height: 100%;
   transform: translateZ(0px);
+}
+
+.input {
+  background-color: rgb(229, 234, 251);
+  border: 1px solid rgb(229, 234, 251);
+  box-shadow: rgba(46, 88, 255, 0.325) 0px 3px 6px 0px;
+  border-radius: 3px;
+  padding: 1rem;
+  color: rgb(0, 27, 105);
+  font-family: 'Poppins';
+  font-size: 18px;
+  width: 100%;
+}
+
+.baseShadow{
+  box-shadow: rgba(46, 88, 255, 0.325) 0px 3px 6px 0px;
+  background-color: #e5eafb;
+  border-radius: 6px;
+}
+
+.genericShadow{
+  box-shadow: rgba(46, 88, 255, 0.325) 0px 3px 6px 0px;
+  border-radius: 6px;
 }

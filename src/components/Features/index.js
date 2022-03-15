@@ -11,7 +11,7 @@ const Features = () => {
         {id: 3, title: 'Customazible', emoji: '🎨', desc: 'Desc here or maybe'}
     ]
     return(
-        <Box className={styles.mainPadding} w='100%' h='auto' display='flex' flexDirection='column' >
+        <Box className={styles.mainPadding} w='100%' h='auto' bg='var(--ifm-color-primary-bg)' display='flex' flexDirection='column' >
             <Box w='100%' h='100%' display='flex' alignItems='center' justifyContent='flex-start' flexDirection='column' >
                 <img src={logo} alt='REWORTH' style={{ width: 80, height: 80 }} />
                 <Heading pt='1rem' className={styles.featuresTitle} textAlign='center' color='var(--ifm-color-primary-text)' >
@@ -29,7 +29,7 @@ const Features = () => {
                                         <Heading pt='1rem' className={styles.titleCard}>
                                             {item.title}
                                         </Heading>
-                                        <Heading pt='1rem' className={styles.descCard}>
+                                        <Heading className={styles.descCard}>
                                             Lorem ipsum dolor sit amet. Eum eveniet iste id dolorem nobis sed magni dolores eos cumque reiciendis. Ut natus nesciunt et provident pariatur qui quisquam voluptas id beatae dolor.
                                         </Heading>
                                     </Box>
