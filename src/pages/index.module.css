@@ -1,0 +1,176 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+ .baseHero {
+  padding: 5rem 12rem;
+  text-align: center;
+}
+
+.mainPadding {
+  padding: 3rem;
+}
+
+.gridPadding {
+  padding: 2rem 8rem;
+}
+
+@media screen and (max-width: 1025px) {
+  .baseHero {
+    padding: 3rem 3rem;
+    text-align: center;
+  }
+
+  .heroTitle{
+    font-weight: 700;
+    font-size: 3rem !important;
+    line-height: 4.5rem;
+    margin: 0px;
+  }
+
+  .mainPadding {
+    padding: 3rem 2rem;
+  }
+
+  .gridPadding {
+    padding: 2rem 3rem;
+  }
+
+  .card {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .baseHero {
+    padding: 3rem 1rem;
+    text-align: center;
+  }
+
+  .heroTitle{
+    font-weight: 700;
+    font-size: 3rem !important;
+    line-height: 4.5rem;
+    margin: 0px;
+  }
+
+  .mainPadding {
+    padding: 3rem 1rem;
+  }
+
+  .gridPadding {
+    padding: 2rem 2rem;
+  }
+
+  .card {
+    grid-column: span 2;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroTitle{
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.5rem;
+  margin: 0px;
+}
+
+.featuresTitle{
+  font-weight: 700;
+  font-size: 1.85rem;
+  margin: 0px;
+}
+
+.gradientText {
+  background: transparent
+  linear-gradient(
+    90deg,
+    #6c21ff 0%,
+    #2b1ee8 24%,
+    #2e58ff 60%,
+    #1e7ce8 83%,
+    #21c2ff 100%
+  )
+  0% 0% no-repeat padding-box;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 0px;
+}
+
+.heroSubtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #001B69;
+}
+
+.gridParent {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2rem 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+  box-shadow: 2px 3px 4px #2E58FF4D;
+  background-image: linear-gradient(288deg, #FFFFFF 0%, #E8ECFB 100%);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.emojiIcon {
+  font-size: 3rem;
+}
+
+.titleCard {
+  font-size: 1.6rem;
+  color: #001B69;
+}
+
+.descCard {
+  font-size: 1rem;
+  color: #001B69;
+  font-weight: 500;
+}
+
+.phoneDark {
+  flex-shrink: 0 !important;
+  box-shadow: 0 0 20px 10px rgba(255,255,255,.2) !important;
+  width: 385px !important;
+  height: 680px !important;
+  padding: 5px !important;
+  border-radius: 25px !important;
+  background: #2e58ff !important;
+  align-self: center !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+}
+
+.phoneLight {
+  flex-shrink: 0 !important;
+  box-shadow: 0 0 20px 10px rgba(0,0,0,.2) !important;
+  width: 385px !important;
+  height: 680px !important;
+  padding: 5px !important;
+  border-radius: 25px !important;
+  background: #000 !important;
+  align-self: center !important;
+  position: relative !important;
+  box-sizing: border-box !important;
+}
+
+.iframeWrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  transform: translateZ(0px);
+}
