@@ -9,12 +9,12 @@ const config = {
   title: 'REWORTH DIRECTORY',
   tagline: 'REWORTH REWARDS',
   url: 'https://ShocKWavEv1.github.io',
-  baseUrl: '/reworth_docs/',
+  baseUrl: '/reworth-docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'ShocKWavEv1', // Usually your GitHub org/user name.
-  projectName: 'reworth_docs', // Usually your repo name.
+  projectName: 'reworth-docs', // Usually your repo name.
 
   presets: [
     [
