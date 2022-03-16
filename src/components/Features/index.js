@@ -5,10 +5,10 @@ import logo from '../../../static/img/logo-small.png';
 
 const Features = () => {
     const featuresCards = [
-        {id: 0, title: 'Up and running', emoji: '✅', desc: 'Desc here or maybe'},
-        {id: 1, title: 'Responsive for devices', emoji: '🖥', desc: 'Desc here or maybe'},
-        {id: 2, title: 'Easy integrations', emoji: '🎉', desc: 'Desc here or maybe'},
-        {id: 3, title: 'Customazible', emoji: '🎨', desc: 'Desc here or maybe'}
+        {id: 0, title: 'Up and running', emoji: '✅', desc: 'We keep an updated real-time directory of our affiliated merchants, so when you integrate the directory to your mobile application you will have an immediate and easy view of the merchants without additional configurations.'},
+        {id: 1, title: 'Responsive for devices', emoji: '🖥', desc: 'We guarantee a 100% responsive development. Each of the web elements are resized to the size of the screen of each device, allowing a correct display and optimized user experience.'},
+        {id: 2, title: 'Easy integrations', emoji: '🎉', desc: 'We improved the documentation for an immediate and easy integration in your mobile applications based on RN, Ionic, Android and iOS, in addition to supporting web applications.'},
+        {id: 3, title: 'Customazible', emoji: '🎨', desc: 'Customize your directory presentation with attributes like colors, fonts, and language according to your brand guidelines.'}
     ]
     return(
         <Box className={styles.mainPadding} w='100%' h='auto' bg='var(--ifm-color-primary-bg)' display='flex' flexDirection='column' >
@@ -30,7 +30,7 @@ const Features = () => {
                                             {item.title}
                                         </Heading>
                                         <Heading className={styles.descCard}>
-                                            Lorem ipsum dolor sit amet. Eum eveniet iste id dolorem nobis sed magni dolores eos cumque reiciendis. Ut natus nesciunt et provident pariatur qui quisquam voluptas id beatae dolor.
+                                            {item.desc}
                                         </Heading>
                                     </Box>
                                 )

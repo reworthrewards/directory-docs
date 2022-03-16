@@ -2,11 +2,9 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import { Box, Button, Heading, Text } from '@chakra-ui/react'
-import logo from '../../static/img/logo-small.png'
+import { Box, Heading } from '@chakra-ui/react'
 import { PrimaryButton, SecondaryButton } from '../utils/Buttons';
 import { useColorMode } from '@docusaurus/theme-common';
-import HomepageFeatures from '../components/HomepageFeatures';
 import Features from '../components/Features';
 import Playground from '../components/Playground';
 import Products from '../components/Products';
