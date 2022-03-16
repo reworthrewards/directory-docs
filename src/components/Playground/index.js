@@ -35,7 +35,7 @@ const Playground = () => {
             <Box w='100%' h='100%' display='flex' alignItems='center' justifyContent='flex-start' flexDirection='column' >
                 <img src={logo} alt='REWORTH' style={{ width: 80, height: 80 }} />
                 <Heading pt='1rem' className={styles.featuresTitle} textAlign='center' color='var(--ifm-color-primary-text)' >
-                    Try our playground and see in action the rewards directory
+                    Try our playground and see the rewards directory in action
                 </Heading>
                 <Box w='100%' h='auto' pt='3rem' display='flex' alignItems='center' justifyContent='center' flexDirection='row' >
                     <div className={styles.gridParent} style={{ bg: 'red' }} >
@@ -54,7 +54,7 @@ const Playground = () => {
                                 Desired HEX color for some UI elements
                             </Heading>
                             <Box w='100%'>
-                                <BlockPicker styles={styles.colorPicker} triangle='hide' width='100%' color={accentColor} onChangeComplete={handleChangeComplete} />
+                                <BlockPicker triangle='hide' width='100%' color={accentColor} onChangeComplete={handleChangeComplete} />
                             </Box>
                             <Box pt='3rem' w='100%' display='flex' flexDirection='column'>
                                 <Heading m='0px' className={styles.titleCard} color='var(--ifm-color-primary-text)'>
@@ -103,7 +103,7 @@ const Playground = () => {
                             </Box>
                             <Box onClick={() => isCopied === true ? null : copyClipboard()} mt='3rem' p='1rem' cursor='pointer' borderRadius='6px' w='100%' bg='#38A169' textAlign='center' display='flex' flexDirection='column' className={styles.genericShadow} >
                                 <Heading m='0px' className={styles.descCard} color='white' >
-                                    {isCopied === true ? 'Copied 🎉' : 'Copy this url generated to your project 📋'}
+                                    {isCopied === true ? 'Copied 🎉' : 'Generated url 📋'}
                                 </Heading>
                             </Box>
                         </div>

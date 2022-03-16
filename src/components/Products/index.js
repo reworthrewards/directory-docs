@@ -8,7 +8,7 @@ import { PrimaryButton } from "../../utils/Buttons";
 const Products = () => {
     const featuresCards = [
         {id: 0, title: 'API Documentation', emoji: '🔮', desc: 'Desc here or maybe', link: 'https://developer.reworth.app', cta: 'See documentation'},
-        {id: 1, title: 'Reward calculator simulator', emoji: '📈', desc: 'Desc here or maybe', link: 'https://calculadoracashback.reworth.co', cta: 'See simulator'}
+        {id: 1, title: 'Cashback Calculator', emoji: '📈', desc: 'Desc here or maybe', link: 'https://calculadoracashback.reworth.co', cta: 'See simulator'}
     ]
     return(
         <Box className={styles.mainPadding} w='100%' h='auto' display='flex' flexDirection='column' >

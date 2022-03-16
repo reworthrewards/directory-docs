@@ -21,7 +21,7 @@ function HomepageHeader() {
     <Box className={styles.baseHero} w='100%' h='auto' bg='var(--ifm-color-primary-bg)' display='flex' alignItems='center' justifyContent='center' flexDirection='column'>
       <Box w='100%' display='flex' alignItems='center' justifyContent='center' flexDirection='column' >
         <Heading m='0px' className={styles.heroTitle} textAlign='center' pt='1rem' color='var(--ifm-color-primary-text)' >
-          Mobile first Build accessible rewards mobile apps with a design-first approach 🎉
+          Enhace your app with our <Heading as='span' color='var(--ifm-color-primary-darkest)' >ready-to-use</Heading> reward directory with a mobile-first approach 🎉
         </Heading>
       </Box>
       <Box pt='2rem' w='100%' display='flex' alignItems='center' justifyContent='center' flexDirection='row' >
