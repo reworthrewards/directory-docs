@@ -7,7 +7,7 @@ import { PrimaryButton } from "../../utils/Buttons";
 
 const Products = () => {
     const featuresCards = [
-        {id: 0, title: 'API Documentation', emoji: '🔮', desc: 'Powerful REST API ready to be implemented in record time. Easy integration with REWORTH via Rest API or one of our tools, allows your banking, fintech or wallet institution to integrate a cashback program in three simple steps', link: 'https://developer.reworth.app', cta: 'See documentation'},
+        {id: 0, title: 'API Documentation', emoji: '🔮', desc: 'Powerful REST API ready to be implemented in record time. Easy integration with REWORTH via Rest API or one of our tools, allows your banking, fintech or wallet institution to integrate a cashback program in three simple steps.', link: 'https://developer.reworth.app', cta: 'See documentation'},
         {id: 1, title: 'Cashback Calculator', emoji: '📈', desc: 'With this simulator, merchants owners and companies will be able to visualize the impact of the use of cashback, such as the number of people who return to the business, as well as an approximation of earnings and average ticket increase.', link: 'https://calculadoracashback.reworth.co', cta: 'See simulator'}
     ]
     return(
