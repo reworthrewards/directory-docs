@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Reworth Directory
+# Getting Started
 
 [![NPM](https://img.shields.io/npm/v/reworth-directory.svg)](https://www.npmjs.com/package/reworth-directory) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 

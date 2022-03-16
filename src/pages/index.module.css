@@ -76,6 +76,30 @@
   }
 }
 
+@media (max-width: 561px) {
+  .heroTitle{
+    font-weight: 700;
+    font-size: 2rem !important;
+    margin: 0px;
+  }
+
+  .baseShadow{
+    flex-flow: wrap;
+  }
+
+  .borderResponsive{
+    border-radius: 6px;
+  }
+
+  .phoneDark {
+    display: none;
+  }
+  
+  .phoneLight {
+    display: none;
+  }
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -209,4 +233,12 @@
 .genericShadow{
   box-shadow: rgba(46, 88, 255, 0.325) 0px 3px 6px 0px;
   border-radius: 6px;
+}
+
+.colorPicker {
+  padding: 2rem 1rem;
+  background-color: #e5eafb;
+  box-shadow: rgba(46, 88, 255, 0.325) 0px 3px 6px 0px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
