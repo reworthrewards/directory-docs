@@ -45,7 +45,7 @@ const config = {
       hideableSidebar: false,
       announcementBar: {
         id: 'support_us',
-        content: config.baseUrl
+        content:
           '⭐️ If you have a business feel free to signup and be part of <a target="_blank" rel="noopener noreferrer" href="https://reworth.app/login/signup?__hstc=54938548.e79190d7d2aa29540118d280c117831b.1647031460157.1647042019022.1647305107805.3&__hssc=54938548.1.1647305107805&__hsfp=705156067&_gl=1*11de7pp*_ga*MzQzNzQyMzk2LjE2NDcwMzE0NjA.*_ga_12VW35S53P*MTY0NzMwNTEwOC40LjEuMTY0NzMwNTEwOC42MA..&_ga=2.21945470.495095850.1647305108-343742396.1647031460">REWORTH</a>',
         backgroundColor: '#2E58FF',
         textColor: '#fff',
