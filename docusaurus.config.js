@@ -71,6 +71,10 @@ const config = {
             label: 'GitHub',
             position: 'right',
           },
+          {
+            type: 'localeDropdown',
+            position: 'left'
+          }
         ],
       },
       algolia: {
@@ -92,6 +96,18 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
+    localeConfigs: {
+      en: {
+        direction: 'ltr',
+      },
+      es: {
+        direction: 'ltr',
+      }
+    }
+  },
 };
 
 module.exports = config;
