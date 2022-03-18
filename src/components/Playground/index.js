@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Box, Heading, Text } from '@chakra-ui/react';
+import Translate from '@docusaurus/Translate';
 import styles from '../../pages/index.module.css';
 import logo from '../../../static/img/logo-small.png';
-import { BlockPicker, TwitterPicker } from 'react-color';
+import { BlockPicker } from 'react-color';
 import { useColorMode } from '@docusaurus/theme-common';
 
 const Playground = () => {
@@ -13,8 +14,6 @@ const Playground = () => {
     const [fontFamily, setFontFamily] = useState('Poppins')
     const [language, setLang] = useState('ES')
     const [isCopied, setCopied] = useState(false)
-
-    const hexRegex = /^[0-9A-F]{6}$/i;
 
     const handleChangeComplete = (color) => {
         setAccentColor(color.hex);
@@ -35,10 +34,12 @@ const Playground = () => {
             <Box w='100%' h='100%' display='flex' alignItems='center' justifyContent='flex-start' flexDirection='column' >
                 <img src={logo} alt='REWORTH' style={{ width: 80, height: 80 }} />
                 <Heading pt='1rem' className={styles.featuresTitle} textAlign='center' color='var(--ifm-color-primary-text)' >
-                    Try our playground and see the rewards directory in action
+                    <Translate>
+                        Try our playground and see the rewards directory in action
+                    </Translate>
                 </Heading>
                 <Box w='100%' h='auto' pt='3rem' display='flex' alignItems='center' justifyContent='center' flexDirection='row' >
-                    <div className={styles.gridParent} style={{ bg: 'red' }} >
+                    <div className={styles.gridParent}>
                         <div className={styles.cardPlayground}>
                             <Box w='100%' display='flex' alignItems='center' justifyContent='flex-start' flexDirection='row' >
                                 <Box bg={accentColor === undefined ? '#e5eafb' : `${accentColor}`} className={styles.genericShadow} borderRadius="6px" width="25px" height="25px" display="flex" alignItems="center" justifyContent="center" >
@@ -47,21 +48,29 @@ const Playground = () => {
                                     }
                                 </Box>
                                 <Heading m='0px' pl='7px' className={styles.titleCard} color='var(--ifm-color-primary-text)'>
-                                    Accent Color
+                                    <Translate>
+                                        Accent Color
+                                    </Translate>
                                 </Heading>
                             </Box>
                             <Heading pt='0.5rem' className={styles.descCard} color='var(--ifm-color-primary-text)'>
-                                Desired HEX color for some UI elements
+                                <Translate>
+                                    Desired HEX color for some UI elements
+                                </Translate>
                             </Heading>
                             <Box w='100%'>
                                 <BlockPicker triangle='hide' width='100%' color={accentColor} onChangeComplete={handleChangeComplete} />
                             </Box>
                             <Box pt='3rem' w='100%' display='flex' flexDirection='column'>
                                 <Heading m='0px' className={styles.titleCard} color='var(--ifm-color-primary-text)'>
-                                    Font Family
+                                    <Translate>
+                                        Font Family
+                                    </Translate>
                                 </Heading>
                                 <Heading pt='0.5rem' className={styles.descCard} color='var(--ifm-color-primary-text)'>
-                                    Poppins, Montserrat, Gothic (more to come)
+                                    <Translate>
+                                        Poppins, Montserrat, Gothic (more to come)
+                                    </Translate>
                                 </Heading>
                                 <Box w='100%' borderLeftRadius='6px' borderRightRadius='6px' display='flex' flexDirection='row' className={styles.baseShadow}>
                                     <Box borderLeftRadius='6px' className={styles.borderResponsive} bg={fontFamily === 'Poppins' ? '#2e58ff' : null} onClick={() => setFontFamily('Poppins')} cursor='pointer' p='1rem' w='100%' display='flex' alignItems='center' justifyContent='center' >
@@ -83,27 +92,35 @@ const Playground = () => {
                             </Box>
                             <Box pt='3rem' w='100%' display='flex' flexDirection='column' >
                                 <Heading m='0px' className={styles.titleCard} color='var(--ifm-color-primary-text)'>
-                                    Language
+                                    <Translate>
+                                        Language
+                                    </Translate>
                                 </Heading>
                                 <Heading pt='0.5rem' className={styles.descCard} color='var(--ifm-color-primary-text)'>
-                                    Supported language.(Spanish and English)
+                                    <Translate>
+                                        Supported language.(Spanish and English)
+                                    </Translate>
                                 </Heading>
                                 <Box w='100%' borderLeftRadius='6px' borderRightRadius='6px' display='flex' flexDirection='row' className={styles.baseShadow} >
                                     <Box borderLeftRadius='6px' className={styles.borderResponsive} onClick={() => setLang('ES')} bg={language === 'ES' ? '#2e58ff' : null} cursor='pointer' p='1rem' w='100%' display='flex' alignItems='center' justifyContent='center' >
                                         <Heading m='0px' className={styles.descCard} color={language === 'ES' ? 'white' : null}>
-                                            Spanish
+                                            <Translate>
+                                                Spanish
+                                            </Translate>
                                         </Heading>
                                     </Box>
                                     <Box borderRightRadius='6px' className={styles.borderResponsive} onClick={() => setLang('EN')} bg={language === 'EN' ? '#2e58ff' : null} cursor='pointer' p='1rem' w='100%' display='flex' alignItems='center' justifyContent='center' >
                                         <Heading m='0px' className={styles.borderResponsive} className={styles.descCard} color={language === 'EN' ? 'white' : null}>
-                                            English
+                                            <Translate>
+                                                English
+                                            </Translate>
                                         </Heading>
                                     </Box>
                                 </Box>
                             </Box>
                             <Box onClick={() => isCopied === true ? null : copyClipboard()} mt='3rem' p='1rem' cursor='pointer' borderRadius='6px' w='100%' bg='#38A169' textAlign='center' display='flex' flexDirection='column' className={styles.genericShadow} >
                                 <Heading m='0px' className={styles.descCard} color='white' >
-                                    {isCopied === true ? 'Copied 🎉' : 'Generated url 📋'}
+                                    {isCopied === true ? <Translate>Copied 🎉</Translate> : <Translate>Generated url 📋</Translate>}
                                 </Heading>
                             </Box>
                         </div>
