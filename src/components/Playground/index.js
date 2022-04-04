@@ -69,7 +69,7 @@ const Playground = () => {
                                 </Heading>
                                 <Heading pt='0.5rem' className={styles.descCard} color='var(--ifm-color-primary-text)'>
                                     <Translate>
-                                        Poppins, Montserrat, Gothic (more to come)
+                                        Poppins, Montserrat, Nunito (more to come)
                                     </Translate>
                                 </Heading>
                                 <Box w='100%' borderLeftRadius='6px' borderRightRadius='6px' display='flex' flexDirection='row' className={styles.baseShadow}>
@@ -83,9 +83,9 @@ const Playground = () => {
                                             Montserrat
                                         </Heading>
                                     </Box>
-                                    <Box borderRightRadius='6px' className={styles.borderResponsive} bg={fontFamily === 'Gothic A1' ? '#2e58ff' : null} onClick={() => setFontFamily('Gothic A1')} cursor='pointer' p='1rem' w='100%' display='flex' alignItems='center' justifyContent='center' >
-                                        <Heading m='0px' className={styles.descCard} color={fontFamily === 'Gothic A1' ? 'white' : null}>
-                                            Gothic A1
+                                    <Box borderRightRadius='6px' className={styles.borderResponsive} bg={fontFamily === 'Nunito' ? '#2e58ff' : null} onClick={() => setFontFamily('Nunito')} cursor='pointer' p='1rem' w='100%' display='flex' alignItems='center' justifyContent='center' >
+                                        <Heading m='0px' className={styles.descCard} color={fontFamily === 'Nunito' ? 'white' : null}>
+                                            Nunito
                                         </Heading>
                                     </Box>
                                 </Box>
