@@ -317,5 +317,26 @@
   },
   "Customazible": {
     "message": "Personalizable"
+  },
+  "Poppins, Montserrat, Nunito (more to come)": {
+    "message": "Poppins, Montserrat, Nunito (more to come)"
+  },
+  "Google Tag Manager": {
+    "message": "Google Tag Manager"
+  },
+  "Activate tag for gathering data": {
+    "message": "Activar tag de Google Manager"
+  },
+  "Activate": {
+    "message": "Activar"
+  },
+  "Deactivate": {
+    "message": "Desactivar"
+  },
+  "Geolocation": {
+    "message": "Geolocalización"
+  },
+  "Coordinates to resolve better offers recomendations": {
+    "message": "Coordenadas para mejorar las recomendaciones"
   }
 }

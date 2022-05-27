@@ -13,6 +13,8 @@ const Playground = () => {
     const [cleanAccent, setCleanAccent] = useState()
     const [fontFamily, setFontFamily] = useState('Poppins')
     const [language, setLang] = useState('ES')
+    const [gtm, setGtm] = useState(false)
+    const [geo, setGeo] = useState(false)
     const [isCopied, setCopied] = useState(false)
 
     const handleChangeComplete = (color) => {
@@ -23,7 +25,7 @@ const Playground = () => {
 
     const copyClipboard = () => {
         setCopied(true)
-        navigator.clipboard.writeText(`<iframe title="Reworth Rewards Directory" width="100%" height="100%" src="https://directory.reworth.app/?accentColor=${cleanAccent}&fontFamily=${fontFamily}&lang=${language}" frameBorder="0" loading="lazy" />`);
+        navigator.clipboard.writeText(`<iframe title="Reworth Rewards Directory" width="100%" height="100%" src="https://directory.reworth.app/?accentColor=${cleanAccent}&fontFamily=${fontFamily}&lang=${language}&gtm=${gtm}${geo === true ? `&geo=${'19.4258701,-99.1696808'}` : ''}" frameBorder="0" loading="lazy" />`);
         setTimeout(() => {
             setCopied(false)
         }, 2500);
@@ -118,6 +120,62 @@ const Playground = () => {
                                     </Box>
                                 </Box>
                             </Box>
+                            <Box pt='3rem' w='100%' display='flex' flexDirection='column' >
+                                <Heading m='0px' className={styles.titleCard} color='var(--ifm-color-primary-text)'>
+                                    <Translate>
+                                        Google Tag Manager
+                                    </Translate>
+                                </Heading>
+                                <Heading pt='0.5rem' className={styles.descCard} color='var(--ifm-color-primary-text)'>
+                                    <Translate>
+                                        Activate tag for gathering data
+                                    </Translate>
+                                </Heading>
+                                <Box w='100%' borderLeftRadius='6px' borderRightRadius='6px' display='flex' flexDirection='row' className={styles.baseShadow} >
+                                    <Box borderLeftRadius='6px' className={styles.borderResponsive} onClick={() => setGtm(true)} bg={gtm === true ? '#2e58ff' : null} cursor='pointer' p='1rem' w='100%' display='flex' alignItems='center' justifyContent='center' >
+                                        <Heading m='0px' className={styles.descCard} color={gtm === true ? 'white' : null}>
+                                            <Translate>
+                                                Activate
+                                            </Translate>
+                                        </Heading>
+                                    </Box>
+                                    <Box borderRightRadius='6px' className={styles.borderResponsive} onClick={() => setGtm(false)} bg={gtm === false ? '#2e58ff' : null} cursor='pointer' p='1rem' w='100%' display='flex' alignItems='center' justifyContent='center' >
+                                        <Heading m='0px' className={styles.borderResponsive} className={styles.descCard} color={gtm === false ? 'white' : null}>
+                                            <Translate>
+                                                Deactivate
+                                            </Translate>
+                                        </Heading>
+                                    </Box>
+                                </Box>
+                            </Box>
+                            <Box pt='3rem' w='100%' display='flex' flexDirection='column' >
+                                <Heading m='0px' className={styles.titleCard} color='var(--ifm-color-primary-text)'>
+                                    <Translate>
+                                        Geolocation
+                                    </Translate>
+                                </Heading>
+                                <Heading pt='0.5rem' className={styles.descCard} color='var(--ifm-color-primary-text)'>
+                                    <Translate>
+                                        Coordinates to resolve better offers recomendations
+                                    </Translate>
+                                </Heading>
+                                <Box w='100%' borderLeftRadius='6px' borderRightRadius='6px' display='flex' flexDirection='row' className={styles.baseShadow} >
+                                    <Box borderLeftRadius='6px' className={styles.borderResponsive} onClick={() => setGeo(true)} bg={geo === true ? '#2e58ff' : null} cursor='pointer' p='1rem' w='100%' display='flex' alignItems='center' justifyContent='center' >
+                                        <Heading m='0px' className={styles.descCard} color={geo === true ? 'white' : null}>
+                                            <Translate>
+                                                Activate
+                                            </Translate>
+                                        </Heading>
+                                    </Box>
+                                    <Box borderRightRadius='6px' className={styles.borderResponsive} onClick={() => setGeo(false)} bg={geo === false ? '#2e58ff' : null} cursor='pointer' p='1rem' w='100%' display='flex' alignItems='center' justifyContent='center' >
+                                        <Heading m='0px' className={styles.borderResponsive} className={styles.descCard} color={geo === false ? 'white' : null}>
+                                            <Translate>
+                                                Deactivate
+                                            </Translate>
+                                        </Heading>
+                                    </Box>
+                                </Box>
+                            </Box>
                             <Box onClick={() => isCopied === true ? null : copyClipboard()} mt='3rem' p='1rem' cursor='pointer' borderRadius='6px' w='100%' bg='#38A169' textAlign='center' display='flex' flexDirection='column' className={styles.genericShadow} >
                                 <Heading m='0px' className={styles.descCard} color='white' >
                                     {isCopied === true ? <Translate>Copied 🎉</Translate> : <Translate>Generated url 📋</Translate>}
@@ -127,7 +185,7 @@ const Playground = () => {
                         <div className={styles.cardPlayground}>
                             <div className={isDarkTheme === true ? styles.phoneDark : styles.phoneLight}>
                                 <div className={styles.iframeWrapper}>
-                                    <iframe src={`https://dev.d1p65nyj9rmkp4.amplifyapp.com/?accentColor=${cleanAccent}&fontFamily=${fontFamily}&lang=${language}`} width='100%' height='100%' border='0px' loading="lazy" />     
+                                    <iframe src={`https://dev.d1p65nyj9rmkp4.amplifyapp.com/?accentColor=${cleanAccent}&fontFamily=${fontFamily}&lang=${language}${geo ? `&geo=${'19.4258701,-99.1696808'}` : null}`} width='100%' height='100%' border='0px' loading="lazy" />     
                                 </div>
                             </div>
                         </div>

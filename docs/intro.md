@@ -62,7 +62,9 @@ const Directory = () => {
 |----| --- | --- | --- | --- |
 | accentColor | String | "#2E58FF" | any desired color| Accent color for all elements and header |
 | lang | String | "ES" | "ES", "EN" | Language supported by the component |
-| fontFamily | String | "Poppins" | "Poppins", "Montserrat", "Gothic a1" |  Available font families |
+| fontFamily | String | "Poppins" | "Poppins", "Montserrat", "Nunito" |  Available font families |
+| geo | String | undefined | "19.3918512,-99.162209" | Latitude and Longitude |
+| gtm | Boolean | false | true - false | Activate Google Tag Manager |
 
 ## License
 

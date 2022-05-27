@@ -9,7 +9,7 @@ sidebar_position: 1
 
  **reworth-directory** es un componente de React listo para usar que le permite integrar el directorio de REWORTH
  
-## Instalación
+## Instalar
 
 ```bash
 # using yarn
@@ -37,7 +37,7 @@ const Directory = () => {
 }
 ```
 
-## Aviso si está usando React con Typescript
+## React con Typescript
 
 ```jsx
 import React from 'react';
@@ -58,12 +58,14 @@ const Directory = () => {
 
 # Props permitidas
 
-| Nombre | Tipo | Por defecto | Opciones | Descripción |
+| Nombre | Tipo | Default | Opciones | Descripción |
 |----| --- | --- | --- | --- |
-| accentColor | String | "#2E58FF" | cualquier color deseado | Color principal para todos los elementos y encabezado |
-| lang | String | "ES" | "ES", "EN" | Idioma permitido por el componente |
-| fontFamily | String | "Poppins" | "Poppins", "Montserrat", "Gothic a1" |  Tipografías disponibles |
+| accentColor | String | "#2E58FF" | cualquier color | Color de acento para todos los elementos y encabezado |
+| lang | String | "ES" | "ES", "EN" | Idioma admitido por el componente |
+| fontFamily | String | "Poppins" | "Poppins", "Montserrat", "Nunito" |  Tipografías de fuentes disponibles |
+| geo | String | undefined | "19.3918512,-99.162209" | Latitude y Longitud |
+| gtm | Boolean | false | true - false | Activar Google Tag Manager |
 
-## Licencia
+## License
 
 mit © [ReworthRewards](https://github.com/ReworthRewards)
